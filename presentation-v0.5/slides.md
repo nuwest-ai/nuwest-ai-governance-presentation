@@ -7,7 +7,7 @@
 **CISO Virtual Forum**
 November 12, 2025
 
-<p class="logo-title">nuwest.ai <span class="logo-chevron">>></span></p>
+<p class="logo-title">nuwest.ai <span class="logo-chevron">></span></p>
 
 **Neil Ashworth**
 Founder & Chief Architect
@@ -951,7 +951,7 @@ Here are your next steps. First, audit your current AI deployments. Second, sche
 
 <!-- .slide: data-background="#000000" class="closing-slide" -->
 
-<p class="logo-closing">nuwest.ai <span class="logo-chevron">>></span></p>
+<p class="logo-closing">nuwest.ai <span class="logo-chevron">></span></p>
 
 **[nuwest.ai@gmail.com](mailto:nuwest.ai@gmail.com)**
 

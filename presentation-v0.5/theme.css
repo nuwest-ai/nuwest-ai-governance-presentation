@@ -713,7 +713,7 @@ body.blackout .reveal .slides {
 }
 
 /*********************************************
- * LOGO STYLING (nuwest.ai >>)
+ * LOGO STYLING (nuwest.ai >)
  *********************************************/
 
 /* Logo on title slide and closing slide */
@@ -731,17 +731,17 @@ body.blackout .reveal .slides {
     margin-left: 0.1em;
 }
 
-/* Default: Dark background (black) - Yellow text + White chevrons */
+/* Default: Dark background (black) - White text + Yellow chevron */
 .reveal .slides section[data-background="#000000"] .logo-chevron {
-    color: var(--white);
+    color: var(--yellow);
 }
 
 .reveal .slides section[data-background="#000000"] .logo-title,
 .reveal .slides section[data-background="#000000"] .logo-closing {
-    color: var(--yellow);
+    color: var(--white);
 }
 
-/* Light background (white) - Black text + Yellow chevrons */
+/* Light background (white) - Black text + Yellow chevron */
 .reveal .slides section[data-background="#FFFFFF"] .logo-chevron {
     color: var(--yellow);
 }
@@ -751,7 +751,7 @@ body.blackout .reveal .slides {
     color: var(--black);
 }
 
-/* Yellow background - Black text + White chevrons */
+/* Yellow background - Black text + White chevron */
 .reveal .slides section[data-background="#FFD300"] .logo-chevron {
     color: var(--white);
 }
