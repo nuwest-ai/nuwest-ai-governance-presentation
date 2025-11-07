@@ -1,7 +1,7 @@
 /**
- * nuwest.ai Presentation Theme
+ * nuwest.ai Presentation Theme v0.4.1
  * Brand Colors: Yellow (#FFD300) + Black (#000000)
- * Primary Font: Chakra Petch
+ * Fonts: IBM Plex Sans (headers), Inconsolata (body), Chakra Petch (logo)
  * Design: Minimal, functional, warning-sign aesthetic
  */
 
@@ -11,6 +11,42 @@
     --white: #FFFFFF;
     --gray: #333333;
     --light-gray: #F5F5F5;
+    --dark-yellow: #CCA700; /* Darker yellow for better contrast on white */
+}
+
+/*********************************************
+ * FONT FACE DECLARATIONS
+ *********************************************/
+
+/* Chakra Petch - For logo only */
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('assets/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* IBM Plex Sans - For headers */
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('assets/fonts/IBM_Plex_Sans/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* Inconsolata - For body text */
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('assets/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype-variations');
+    font-weight: 200 900;
+    font-style: normal;
 }
 
 /*********************************************
@@ -18,7 +54,7 @@
  *********************************************/
 
 .reveal {
-    font-family: 'Chakra Petch', monospace, sans-serif;
+    font-family: 'Inconsolata', 'Courier New', monospace;
     font-size: 32px;
     font-weight: 400;
     color: var(--black);
@@ -50,17 +86,19 @@
     color: var(--black);
 }
 
+/* FIXED: Yellow background slides now use BLACK text instead of yellow */
 .reveal .slides section[data-background="#FFD300"],
 .reveal .slides section[data-background="#FFD300"] h1,
 .reveal .slides section[data-background="#FFD300"] h2,
 .reveal .slides section[data-background="#FFD300"] h3,
-.reveal .slides section[data-background="#FFD300"] p {
+.reveal .slides section[data-background="#FFD300"] p,
+.reveal .slides section[data-background="#FFD300"] li {
     background: var(--yellow);
     color: var(--black);
 }
 
 /*********************************************
- * HEADERS
+ * HEADERS (IBM Plex Sans)
  *********************************************/
 
 .reveal h1,
@@ -69,7 +107,7 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-    font-family: 'Chakra Petch', monospace, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.2;
@@ -158,18 +196,37 @@
 }
 
 /*********************************************
- * TEXT
+ * TEXT (Inconsolata)
  *********************************************/
 
 .reveal p {
     margin: 20px 0;
     line-height: 1.5;
+    font-family: 'Inconsolata', 'Courier New', monospace;
 }
 
+/* FIXED: Strong/bold text on white background uses darker yellow for better contrast */
 .reveal strong,
 .reveal b {
     font-weight: 700;
+}
+
+.reveal .slides section[data-background="#FFFFFF"] strong,
+.reveal .slides section[data-background="#FFFFFF"] b {
+    color: var(--black);
+    background: var(--yellow);
+    padding: 2px 6px;
+}
+
+.reveal .slides section[data-background="#000000"] strong,
+.reveal .slides section[data-background="#000000"] b {
     color: var(--yellow);
+}
+
+.reveal .slides section[data-background="#FFD300"] strong,
+.reveal .slides section[data-background="#FFD300"] b {
+    color: var(--black);
+    font-weight: 700;
 }
 
 .reveal em,
@@ -197,6 +254,11 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+/* Fix for yellow background */
+.reveal .slides section[data-background="#FFD300"] ul li:before {
+    color: var(--black);
 }
 
 .reveal ol {
@@ -254,13 +316,25 @@
     text-align: center;
     margin: 40px 0;
     line-height: 1;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.reveal .slides section[data-background="#FFD300"] .stat-large {
+    color: var(--black);
+}
+
+/* FIXED: highlight-yellow on white background now uses darker color */
 .highlight-yellow {
     background: var(--yellow);
     padding: 5px 10px;
     color: var(--black);
     font-weight: 600;
+}
+
+.reveal .slides section[data-background="#FFFFFF"] .highlight-yellow {
+    background: var(--yellow);
+    color: var(--black);
+    border: 2px solid var(--black);
 }
 
 /*********************************************
@@ -278,6 +352,10 @@
     color: #999;
 }
 
+.reveal .slides section[data-background="#FFD300"] .citation {
+    color: var(--gray);
+}
+
 .tagline,
 .tagline-closing {
     font-size: 0.9em;
@@ -287,6 +365,11 @@
     text-align: right;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.reveal .slides section[data-background="#FFD300"] .tagline {
+    color: var(--black);
 }
 
 .tagline-closing {
@@ -320,7 +403,7 @@
     border: 2px solid var(--yellow);
     padding: 20px;
     margin: 20px 0;
-    font-family: 'Courier New', monospace;
+    font-family: 'Inconsolata', 'Courier New', monospace;
     font-size: 0.7em;
     line-height: 1.4;
 }
@@ -330,7 +413,7 @@
     color: var(--yellow);
     padding: 3px 8px;
     border-radius: 3px;
-    font-family: 'Courier New', monospace;
+    font-family: 'Inconsolata', 'Courier New', monospace;
 }
 
 .reveal pre code {
@@ -346,6 +429,7 @@
     border-collapse: collapse;
     margin: 30px auto;
     width: 100%;
+    font-family: 'Inconsolata', monospace;
 }
 
 .reveal table th {
@@ -366,7 +450,7 @@
 }
 
 /*********************************************
- * IMAGES
+ * IMAGES & ICONS
  *********************************************/
 
 .reveal img {
@@ -375,8 +459,23 @@
     border: none;
 }
 
+.icon-inline {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.icon-large {
+    display: block;
+    width: 4em;
+    height: 4em;
+    margin: 20px auto;
+}
+
 /*********************************************
- * FOOTER
+ * FOOTER (nuwest.ai logo with Chakra Petch)
  *********************************************/
 
 .footer {
@@ -399,7 +498,8 @@
 }
 
 .footer-brand {
-    font-weight: 700;
+    font-family: 'Chakra Petch', monospace;
+    font-weight: 600; /* Semi-bold */
     color: var(--yellow);
     font-size: 1.2em;
 }
@@ -411,6 +511,7 @@
 
 .footer-title {
     color: var(--white);
+    font-family: 'Inconsolata', monospace;
 }
 
 /*********************************************
@@ -443,6 +544,7 @@
     font-weight: 700;
     color: var(--yellow);
     margin-bottom: 40px;
+    font-family: 'Chakra Petch', monospace;
 }
 
 .reveal .closing-slide p {
@@ -476,6 +578,11 @@
     text-decoration: underline;
 }
 
+.reveal .slides section[data-background="#FFD300"] a {
+    color: var(--black);
+    text-decoration: underline;
+}
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -502,6 +609,62 @@ body.blackout .reveal .slides {
 }
 
 /*********************************************
+ * VISUAL ELEMENTS - Icons & Graphics
+ *********************************************/
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.icon-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-item svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.visual-separator {
+    width: 100%;
+    height: 3px;
+    background: var(--yellow);
+    margin: 40px 0;
+}
+
+.reveal .slides section[data-background="#FFD300"] .visual-separator {
+    background: var(--black);
+}
+
+.stat-box {
+    display: inline-block;
+    background: var(--black);
+    border: 3px solid var(--yellow);
+    padding: 20px 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.stat-box .number {
+    font-size: 3em;
+    color: var(--yellow);
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.stat-box .label {
+    font-size: 0.8em;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+/*********************************************
  * CUSTOM UTILITY CLASSES
  *********************************************/
 
@@ -519,6 +682,20 @@ body.blackout .reveal .slides {
 
 .mt-40 {
     margin-top: 40px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
 }
 
 /*********************************************
@@ -550,5 +727,10 @@ body.blackout .reveal .slides {
 
     .stat-large {
         font-size: 3.5em;
+    }
+
+    .two-column,
+    .three-column {
+        grid-template-columns: 1fr;
     }
 }

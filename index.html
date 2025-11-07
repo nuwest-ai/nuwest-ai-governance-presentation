@@ -12,10 +12,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-    <!-- Google Fonts: Chakra Petch per brand guidelines -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts loaded locally from assets/fonts/ -->
 
     <!-- Reveal.js core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reset.css">
@@ -72,10 +69,10 @@
             slideNumber: 'c/t',
             showSlideNumber: 'speaker',
 
-            // Transition settings - interesting and unpredictable
-            transition: 'slide', // Main transition
+            // Transition settings - diverse and unpredictable
+            transition: 'none', // Will be set dynamically
             transitionSpeed: 'default',
-            backgroundTransition: 'zoom',
+            backgroundTransition: 'fade',
 
             // Auto-slide disabled
             autoSlide: 0,
@@ -111,18 +108,41 @@
             document.body.classList.toggle('blackout');
         });
 
-        // Random transition variations for unpredictability
-        const transitions = ['slide', 'convex', 'concave', 'zoom'];
-        let transitionIndex = 0;
+        // DIVERSE TRANSITIONS for intrigue and attention
+        const transitions = [
+            'none',      // Instant (10% - section breaks)
+            'fade',      // Gentle (25% - most common)
+            'slide',     // Standard (20%)
+            'convex',    // Dynamic (15%)
+            'concave',   // Dynamic (15%)
+            'zoom'       // Impact (15%)
+        ];
 
-        Reveal.on('slidechanged', event => {
-            // Vary transitions occasionally for unpredictability
-            if (Math.random() > 0.7) {
-                transitionIndex = (transitionIndex + 1) % transitions.length;
-                Reveal.configure({
-                    transition: transitions[transitionIndex]
-                });
+        const transitionWeights = [10, 25, 20, 15, 15, 15]; // Total: 100
+
+        function getWeightedRandomTransition() {
+            const rand = Math.random() * 100;
+            let cumulative = 0;
+            for (let i = 0; i < transitionWeights.length; i++) {
+                cumulative += transitionWeights[i];
+                if (rand < cumulative) {
+                    return transitions[i];
+                }
             }
+            return 'fade'; // Fallback
+        }
+
+        // Set initial transition
+        Reveal.configure({
+            transition: getWeightedRandomTransition()
+        });
+
+        // Change transition for EVERY slide to maintain intrigue
+        Reveal.on('slidechanged', event => {
+            const nextTransition = getWeightedRandomTransition();
+            Reveal.configure({
+                transition: nextTransition
+            });
         });
     </script>
 </body>
