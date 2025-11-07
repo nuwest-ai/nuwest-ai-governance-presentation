@@ -522,23 +522,35 @@ All four metrics must pass before you deploy to production. This is the standard
 
 **Scenario: Customer service chatbot deployment**
 
+<div class="two-column">
+<div>
+
 **Before Deployment:**
 - Run toxicity evals across **10,000 test conversations**
-- Test bias across demographic groups (age, race, gender, income)
-- Validate age-appropriate response filtering
-- **Document baseline metrics** for regulatory compliance
+- Test bias across demographic groups
+- Validate age-appropriate filtering
+- **Document baseline metrics**
 
 **During Production:**
-- Real-time toxicity monitoring on **every conversation**
-- Continuous bias detection and alerting
-- Anomaly detection when behavior drifts from baseline
-- Automated kill switch triggers for alignment violations
+- Real-time toxicity monitoring
+- Continuous bias detection
+- Anomaly detection for drift
+- Automated kill switch triggers
+
+</div>
+<div>
 
 **After Incident:**
 - Complete conversation log reconstruction
 - Root cause identification using eval frameworks
 - Retraining with fairness constraints
 - **Regulatory reporting with documented testing proof**
+
+**Result:**
+Measurable, provable due diligence that holds up in court and with regulators.
+
+</div>
+</div>
 
 <p class="tagline">Facts, not fear.</p>
 
@@ -639,7 +651,8 @@ So you understand the problem. You understand the solution. Now the question is:
 
 ## NIST AI RMF Framework (Adapted for Testing)
 
-**The Four Functions:**
+<div class="two-column">
+<div>
 
 **1. GOVERN**
 - Who can **deploy AI systems**?
@@ -651,6 +664,9 @@ So you understand the problem. You understand the solution. Now the question is:
 - Identify **high-risk applications** (customer-facing, autonomous)
 - Classify by impact: reputational, financial, safety, **life-threatening**
 
+</div>
+<div>
+
 **3. MEASURE**
 - Implement **evals with fairness rubrics** (DeepEval, RAGAs, DeepChecks)
 - **Baseline** toxicity, bias, fairness, alignment metrics
@@ -661,6 +677,9 @@ So you understand the problem. You understand the solution. Now the question is:
 - Incident response playbooks for **AI-caused harm**
 - Continuous **revalidation cycles** (quarterly minimum)
 - **Third-party audits** annually
+
+</div>
+</div>
 
 <p class="citation">Source: NIST AI RMF 2.0 (Feb 2024); NIST-AI-600-1 (July 2024)</p>
 
@@ -675,33 +694,42 @@ The NIST AI Risk Management Framework gives us a proven structure. Here's what e
 
 ## 90-Day Action Plan
 
+<div class="two-column">
+<div>
+
 **Week 1-2: Discovery**
-- Audit current AI systems across the organization
-- Identify high-risk deployments (customer-facing, decision-making)
-- **Deliverable:** AI inventory with risk classifications
+- Audit current AI systems
+- Identify high-risk deployments
+- **Deliverable:** AI inventory
 
 **Week 3-4: Baseline Testing**
-- Select evals framework (DeepEval, RAGAs, or both)
-- Run initial tests on **top 3 high-risk systems**
-- **Deliverable:** Baseline metrics report
+- Select evals framework
+- Run tests on **top 3 systems**
+- **Deliverable:** Metrics report
 
-**Week 5-8: Production Integration**
-- Implement **real-time monitoring** for critical systems
-- Establish **alert thresholds** and automated responses
-- Create **incident response playbooks** for AI harm scenarios
-- **Deliverable:** Monitoring dashboard + playbooks
+**Week 5-8: Production**
+- Implement **real-time monitoring**
+- Establish **alert thresholds**
+- Create **incident playbooks**
+- **Deliverable:** Dashboard + playbooks
+
+</div>
+<div>
 
 **Week 9-12: Validation**
-- **Third-party assessment** of testing adequacy
-- Gap analysis against **EU AI Act, GDPR, NIST AI RMF**
-- **Board presentation** with measurable metrics
-- **Deliverable:** Executive report + remediation roadmap
+- **Third-party assessment**
+- Gap analysis (EU AI Act, GDPR, NIST)
+- **Board presentation**
+- **Deliverable:** Executive report
 
 **Maturity Indicator:**
-✓ Mature: No AI deployed without passing evals, continuous monitoring, kill switches, audit trails
-❌ Immature: "We have a policy" (untested), "Our vendor says it's safe" (no verification)
+✓ **Mature:** No AI deployed without passing evals
+❌ **Immature:** "We have a policy" (untested)
 
-**The Question:** When the judge asks "What did you do to prevent this?" → Show them your testing logs, not your policy PDF
+**The Question:** Show testing logs, not policy PDFs
+
+</div>
+</div>
 
 Note:
 You can get from blind to informed in 90 days. At the end, you'll be able to show documented evidence of systematic testing - not just a policy. That's the difference between mature and immature AI governance.
@@ -826,8 +854,8 @@ Here are your next steps. First, audit your current AI deployments. Second, sche
 <p class="qr-label">Connect on LinkedIn</p>
 </div>
 <div class="contact-details">
-<p class="contact-link">[nuwest.ai@gmail.com](mailto:nuwest.ai@gmail.com)</p>
-<p class="contact-link">[https://www.nuwest.ai](https://www.nuwest.ai)</p>
+<p class="contact-link"><a href="mailto:nuwest.ai@gmail.com">nuwest.ai@gmail.com</a></p>
+<p class="contact-link"><a href="https://www.nuwest.ai">www.nuwest.ai</a></p>
 <p class="tagline-closing">Measure what matters.</p>
 </div>
 </div>
