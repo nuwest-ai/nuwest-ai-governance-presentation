@@ -1,0 +1,1000 @@
+/**
+ * nuwest.ai Presentation Theme v0.4.1
+ * Brand Colors: Yellow (#FFD300) + Black (#000000)
+ * Fonts: IBM Plex Sans (headers), Inconsolata (body), Chakra Petch (logo)
+ * Design: Minimal, functional, warning-sign aesthetic
+ */
+
+:root {
+    --yellow: #FFD300;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray: #333333;
+    --light-gray: #F5F5F5;
+    --dark-yellow: #CCA700; /* Darker yellow for better contrast on white */
+}
+
+/*********************************************
+ * FONT FACE DECLARATIONS
+ *********************************************/
+
+/* Chakra Petch - For logo only */
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('assets/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('assets/fonts/Chakra_Petch/ChakraPetch-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* IBM Plex Sans - For headers */
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('assets/fonts/IBM_Plex_Sans/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+/* Inconsolata - For body text */
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('assets/fonts/Inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype-variations');
+    font-weight: 200 900;
+    font-style: normal;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+.reveal {
+    font-family: 'Inconsolata', 'Courier New', monospace;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+/*********************************************
+ * BACKGROUNDS
+ *********************************************/
+
+.reveal .slides section {
+    padding: 40px;
+}
+
+.reveal .slides section[data-background="#000000"],
+.reveal .slides section[data-background="#000000"] h1,
+.reveal .slides section[data-background="#000000"] h2,
+.reveal .slides section[data-background="#000000"] h3,
+.reveal .slides section[data-background="#000000"] p,
+.reveal .slides section[data-background="#000000"] li {
+    color: var(--white);
+}
+
+.reveal .slides section[data-background="#FFFFFF"] {
+    background: var(--white);
+    color: var(--black);
+}
+
+/* FIXED: Yellow background slides now use BLACK text instead of yellow */
+.reveal .slides section[data-background="#FFD300"],
+.reveal .slides section[data-background="#FFD300"] h1,
+.reveal .slides section[data-background="#FFD300"] h2,
+.reveal .slides section[data-background="#FFD300"] h3,
+.reveal .slides section[data-background="#FFD300"] p,
+.reveal .slides section[data-background="#FFD300"] li {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+/*********************************************
+ * HEADERS (IBM Plex Sans)
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-transform: none;
+}
+
+.reveal h1 {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.reveal h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*********************************************
+ * TITLE SLIDE
+ *********************************************/
+
+.reveal .title-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Title container */
+.reveal .title-slide .title-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 60px;
+}
+
+/* Logo at top */
+.reveal .title-slide .logo-title-top {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: var(--white);
+    margin-bottom: 60px;
+}
+
+/* Main title */
+.reveal .title-slide .main-title {
+    font-size: 4.5em;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--yellow);
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Subtitle */
+.reveal .title-slide .subtitle {
+    font-size: 1.8em;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--white);
+    margin-bottom: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Divider line */
+.reveal .title-slide .title-divider {
+    width: 150px;
+    height: 3px;
+    background: var(--yellow);
+    margin: 50px auto;
+}
+
+/* Footer section */
+.reveal .title-slide .title-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* Event info */
+.reveal .title-slide .event-info {
+    text-align: left;
+}
+
+.reveal .title-slide .event-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--yellow);
+    margin-bottom: 5px;
+}
+
+.reveal .title-slide .event-date {
+    font-size: 1em;
+    color: #999;
+    margin: 0;
+}
+
+/* Presenter info */
+.reveal .title-slide .presenter-info {
+    text-align: right;
+}
+
+.reveal .title-slide .presenter-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.reveal .title-slide .presenter-title {
+    font-size: 0.9em;
+    color: #999;
+    margin: 0;
+}
+
+/* Legacy support */
+.reveal .title-slide h1 {
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--yellow);
+}
+
+.reveal .title-slide h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: var(--white);
+}
+
+.reveal .title-slide p {
+    font-size: 0.9em;
+    color: var(--white);
+    margin: 10px 0;
+}
+
+/*********************************************
+ * SECTION HEADERS
+ *********************************************/
+
+.reveal .section-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reveal .section-header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: var(--yellow);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.reveal .section-header h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--white);
+}
+
+/*********************************************
+ * TEXT (Inconsolata)
+ *********************************************/
+
+.reveal p {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-family: 'Inconsolata', 'Courier New', monospace;
+}
+
+/* FIXED: Strong/bold text on white background uses darker yellow for better contrast */
+.reveal strong,
+.reveal b {
+    font-weight: 700;
+}
+
+.reveal .slides section[data-background="#FFFFFF"] strong,
+.reveal .slides section[data-background="#FFFFFF"] b {
+    color: var(--black);
+    background: var(--yellow);
+    padding: 2px 6px;
+}
+
+.reveal .slides section[data-background="#000000"] strong,
+.reveal .slides section[data-background="#000000"] b {
+    color: var(--yellow);
+}
+
+.reveal .slides section[data-background="#FFD300"] strong,
+.reveal .slides section[data-background="#FFD300"] b {
+    color: var(--black);
+    font-weight: 700;
+}
+
+.reveal em,
+.reveal i {
+    font-style: italic;
+}
+
+/*********************************************
+ * LISTS
+ *********************************************/
+
+.reveal ul,
+.reveal ol {
+    margin: 20px 0 20px 40px;
+}
+
+.reveal ul {
+    list-style-type: none;
+}
+
+.reveal ul li:before {
+    content: ">";
+    color: var(--yellow);
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Fix for yellow background */
+.reveal .slides section[data-background="#FFD300"] ul li:before {
+    color: var(--black);
+}
+
+.reveal ol {
+    list-style-type: decimal;
+}
+
+.reveal li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/*********************************************
+ * QUOTES & CALLOUTS
+ *********************************************/
+
+.reveal blockquote {
+    background: var(--gray);
+    border-left: 5px solid var(--yellow);
+    margin: 30px 0;
+    padding: 20px 30px;
+    font-style: italic;
+    color: var(--white);
+}
+
+.quote-box {
+    background: var(--black);
+    border: 3px solid var(--yellow);
+    padding: 30px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
+
+.question-box {
+    background: var(--yellow);
+    border: 3px solid var(--black);
+    padding: 40px;
+    margin: 40px 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black);
+}
+
+/*********************************************
+ * STATS & EMPHASIS
+ *********************************************/
+
+.stat-large {
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--yellow);
+    text-align: center;
+    margin: 40px 0;
+    line-height: 1;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.reveal .slides section[data-background="#FFD300"] .stat-large {
+    color: var(--black);
+}
+
+/* FIXED: highlight-yellow on white background now uses darker color */
+.highlight-yellow {
+    background: var(--yellow);
+    padding: 5px 10px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.reveal .slides section[data-background="#FFFFFF"] .highlight-yellow {
+    background: var(--yellow);
+    color: var(--black);
+    border: 2px solid var(--black);
+}
+
+/*********************************************
+ * CITATIONS & TAGLINES
+ *********************************************/
+
+.citation {
+    font-size: 0.6em;
+    color: var(--gray);
+    margin-top: 40px;
+    font-style: italic;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.reveal .slides section[data-background="#000000"] .citation {
+    color: #999;
+}
+
+.reveal .slides section[data-background="#FFD300"] .citation {
+    color: var(--gray);
+}
+
+.tagline,
+.tagline-closing {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--yellow);
+    margin-top: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.reveal .slides section[data-background="#FFD300"] .tagline {
+    color: var(--black);
+}
+
+.tagline-closing {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/*********************************************
+ * FRAGMENTS
+ *********************************************/
+
+.reveal .fragment {
+    opacity: 0;
+}
+
+.reveal .fragment.visible {
+    opacity: 1;
+}
+
+.reveal .fragment.highlight-yellow.visible {
+    background: var(--yellow);
+}
+
+/*********************************************
+ * CODE
+ *********************************************/
+
+.reveal pre {
+    background: var(--black);
+    border: 2px solid var(--yellow);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Inconsolata', 'Courier New', monospace;
+    font-size: 0.7em;
+    line-height: 1.4;
+}
+
+.reveal code {
+    background: var(--gray);
+    color: var(--yellow);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-family: 'Inconsolata', 'Courier New', monospace;
+}
+
+.reveal pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/*********************************************
+ * TABLES
+ *********************************************/
+
+.reveal table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+}
+
+.reveal table th {
+    background: var(--black);
+    color: var(--yellow);
+    font-weight: 700;
+    padding: 15px;
+    border: 2px solid var(--yellow);
+}
+
+.reveal table td {
+    padding: 12px;
+    border: 1px solid var(--gray);
+}
+
+.reveal table tr:nth-child(even) {
+    background: var(--light-gray);
+}
+
+/*********************************************
+ * IMAGES & ICONS
+ *********************************************/
+
+.reveal img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.icon-inline {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.icon-large {
+    display: block;
+    width: 4em;
+    height: 4em;
+    margin: 20px auto;
+}
+
+/*********************************************
+ * FOOTER (nuwest.ai logo with Chakra Petch)
+ *********************************************/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: var(--black);
+    border-top: 3px solid var(--yellow);
+    z-index: 100;
+    font-size: 0.7em;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
+.footer-brand {
+    font-family: 'Chakra Petch', monospace;
+    font-weight: 600; /* Semi-bold */
+    color: var(--white); /* White text on black background */
+    font-size: 1.2em;
+}
+
+.footer-chevron {
+    color: var(--yellow); /* Yellow > symbol */
+    font-weight: 700;
+    margin-left: 0.1em;
+}
+
+.footer-divider {
+    margin: 0 15px;
+    color: var(--yellow);
+}
+
+.footer-title {
+    color: var(--white);
+    font-family: 'Inconsolata', monospace;
+}
+
+/*********************************************
+ * BACKUP SLIDES
+ *********************************************/
+
+.reveal .backup-slide {
+    font-size: 0.7em;
+}
+
+.reveal .backup-slide h2 {
+    font-size: 1.4em;
+}
+
+/*********************************************
+ * CLOSING SLIDE
+ *********************************************/
+
+.reveal .closing-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reveal .closing-slide h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--yellow);
+    margin-bottom: 40px;
+    font-family: 'Chakra Petch', monospace;
+}
+
+.reveal .closing-slide p {
+    font-size: 1.2em;
+    color: var(--white);
+    margin: 15px 0;
+}
+
+.reveal .closing-slide a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reveal .closing-slide a:hover {
+    text-decoration: underline;
+}
+
+/* Thank you text */
+.reveal .closing-slide .thank-you-text {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--white);
+    margin: 30px 0 50px 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Closing content layout */
+.reveal .closing-slide .closing-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* QR code section */
+.reveal .closing-slide .qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reveal .closing-slide .qr-label {
+    font-size: 0.9em;
+    color: var(--yellow);
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* Contact details */
+.reveal .closing-slide .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.reveal .closing-slide .contact-link {
+    font-size: 0.9em;
+    color: var(--white);
+    margin: 5px 0;
+}
+
+.reveal .closing-slide .contact-link a {
+    color: var(--yellow);
+    font-size: 1em;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reveal a:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+.reveal .slides section[data-background="#FFD300"] a {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls {
+    color: var(--yellow);
+}
+
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--yellow);
+}
+
+.reveal .progress span {
+    background: var(--yellow);
+}
+
+/*********************************************
+ * BLACKOUT MODE (B KEY)
+ *********************************************/
+
+body.blackout .reveal .slides {
+    opacity: 0;
+}
+
+/*********************************************
+ * VISUAL ELEMENTS - Icons & Graphics
+ *********************************************/
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.icon-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-item svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.visual-separator {
+    width: 100%;
+    height: 3px;
+    background: var(--yellow);
+    margin: 40px 0;
+}
+
+.reveal .slides section[data-background="#FFD300"] .visual-separator {
+    background: var(--black);
+}
+
+.stat-box {
+    display: inline-block;
+    background: var(--black);
+    border: 3px solid var(--yellow);
+    padding: 20px 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.stat-box .number {
+    font-size: 3em;
+    color: var(--yellow);
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.stat-box .label {
+    font-size: 0.8em;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+/*********************************************
+ * CUSTOM UTILITY CLASSES
+ *********************************************/
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/*********************************************
+ * PRINT/PDF STYLES
+ *********************************************/
+
+@media print {
+    .footer {
+        display: none;
+    }
+
+    .reveal .slides section {
+        page-break-after: always;
+    }
+}
+
+/*********************************************
+ * LOGO STYLING (nuwest.ai >)
+ *********************************************/
+
+/* Logo on title slide and closing slide */
+.logo-title,
+.logo-closing {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 30px 0;
+}
+
+/* Chevron styling with brand color variations */
+.logo-chevron {
+    font-weight: 700;
+    margin-left: 0.1em;
+}
+
+/* Default: Dark background (black) - White text + Yellow chevron */
+.reveal .slides section[data-background="#000000"] .logo-chevron {
+    color: var(--yellow);
+}
+
+.reveal .slides section[data-background="#000000"] .logo-title,
+.reveal .slides section[data-background="#000000"] .logo-closing {
+    color: var(--white);
+}
+
+/* Light background (white) - Black text + Yellow chevron */
+.reveal .slides section[data-background="#FFFFFF"] .logo-chevron {
+    color: var(--yellow);
+}
+
+.reveal .slides section[data-background="#FFFFFF"] .logo-title,
+.reveal .slides section[data-background="#FFFFFF"] .logo-closing {
+    color: var(--black);
+}
+
+/* Yellow background - Black text + White chevron */
+.reveal .slides section[data-background="#FFD300"] .logo-chevron {
+    color: var(--white);
+}
+
+.reveal .slides section[data-background="#FFD300"] .logo-title,
+.reveal .slides section[data-background="#FFD300"] .logo-closing {
+    color: var(--black);
+}
+
+/*********************************************
+ * EMPHASIS BOX (for key stats and callouts)
+ *********************************************/
+
+.emphasis-box {
+    border: 3px solid var(--yellow);
+    padding: 20px 25px;
+    margin: 20px auto;
+    max-width: 90%;
+    background: rgba(255, 211, 0, 0.05);
+    box-shadow: 0 0 20px rgba(255, 211, 0, 0.2);
+    text-align: center;
+}
+
+.reveal .slides section[data-background="#FFFFFF"] .emphasis-box {
+    border-color: var(--black);
+    background: rgba(255, 211, 0, 0.1);
+}
+
+.reveal .slides section[data-background="#FFD300"] .emphasis-box {
+    border-color: var(--black);
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/*********************************************
+ * CONDENSED SLIDES (for dense content)
+ *********************************************/
+
+.condensed-slide {
+    font-size: 0.85em !important;
+}
+
+.condensed-slide h2 {
+    font-size: 1.6em !important;
+    margin-bottom: 15px !important;
+}
+
+.condensed-slide ul,
+.condensed-slide ol {
+    margin: 10px 0 !important;
+}
+
+.condensed-slide li {
+    margin-bottom: 8px !important;
+    line-height: 1.3 !important;
+}
+
+.condensed-slide p {
+    margin-bottom: 12px !important;
+}
+
+/* Two-column layout for dense content */
+.two-column-condensed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    font-size: 0.9em;
+}
+
+/*********************************************
+ * RESPONSIVE
+ *********************************************/
+
+@media screen and (max-width: 1024px) {
+    .reveal {
+        font-size: 24px;
+    }
+
+    .reveal h1 {
+        font-size: 2em;
+    }
+
+    .stat-large {
+        font-size: 3.5em;
+    }
+
+    .two-column,
+    .three-column {
+        grid-template-columns: 1fr;
+    }
+}
