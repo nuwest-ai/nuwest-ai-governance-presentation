@@ -500,8 +500,14 @@
 .footer-brand {
     font-family: 'Chakra Petch', monospace;
     font-weight: 600; /* Semi-bold */
-    color: var(--yellow);
+    color: var(--white); /* White text on black background */
     font-size: 1.2em;
+}
+
+.footer-chevron {
+    color: var(--yellow); /* Yellow > symbol */
+    font-weight: 700;
+    margin-left: 0.1em;
 }
 
 .footer-divider {
