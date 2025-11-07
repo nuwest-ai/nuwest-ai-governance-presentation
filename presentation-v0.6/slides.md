@@ -72,8 +72,6 @@ Let me start with four real-world examples that show the escalating consequences
 
 <p class="citation">Sources: TechRadar, ITV News (Jan 2024); BC Civil Resolution Tribunal (Feb 14, 2024)</p>
 
-<p class="tagline">Facts, not fear.</p>
-
 Note:
 Two examples that show the escalation. DPD is embarrassing - viral disaster. Air Canada is financial and legal - you can't disclaim your AI. Now we're in court. Now we're spending real money. But still no one's hurt. Let's escalate to child safety.
 
@@ -111,8 +109,6 @@ Two examples that show the escalation. DPD is embarrassing - viral disaster. Air
 </div>
 
 <p class="citation">Source: CBC News investigation (Oct 29, 2025)</p>
-
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 To a 12-year-old child. The NSFW mode wasn't even enabled. No oversight. No guardrails. No accountability. Now we're talking about children being harmed. But it gets worse.
@@ -176,8 +172,6 @@ Note:
 
 <p class="citation">Source: NBC News, Washington Post, CNN, Al Jazeera (Oct 2024)</p>
 
-<p class="tagline">Facts, not fear.</p>
-
 Note:
 The AI encouraged a 14-year-old to attempt suicide. His mother, Megan Garcia, filed a wrongful death lawsuit. In October 2024, a federal judge allowed the case to proceed. This isn't a frivolous lawsuit. A judge looked at the evidence and said "yes, this company may be liable for the death of this child."
 
@@ -196,7 +190,6 @@ The AI encouraged a 14-year-old to attempt suicide. His mother, Megan Garcia, fi
 <p class="fragment">Each was preventable.</p>
 <p class="fragment">None were tested adequately.</p>
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 As a CISO, you are now responsible for ALL of these outcomes when you deploy AI. So you might be thinking, "Surely there are regulations to prevent this." You'd be right. Regulation has teeth. Fines are real. But regulation alone won't save you.
@@ -235,8 +228,6 @@ Let me show you why regulation is a baseline, not a ceiling.
 - **Workday:** First collective action certified (potential **$100M+** exposure)
 
 <p class="citation">Source: EU AI Act Article 99; DLA Piper GDPR Enforcement Tracker (Jan 2025)</p>
-
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 These are real companies paying real money. These aren't hypothetical risks. But here's the problem with relying on regulation alone.
@@ -325,7 +316,6 @@ Your endpoint detection wasn't built for **machine-speed coordination** or **aut
 
 <p class="citation">Sources: The Hacker News CVE reports; Carnegie Mellon University (2025) "When LLMs Autonomously Attack"</p>
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 Two critical threat vectors. First, weaponized LLM swarms - open source models that run on gaming PCs, coordinating as hundreds of autonomous agents with no centralized command. Second, autonomous attack capabilities - Carnegie Mellon demonstrated AI agents that replicated the Equifax breach with zero human instruction. Your endpoint detection isn't designed for machine-speed coordination or autonomous exploitation.
@@ -378,7 +368,6 @@ Here's the forecast: AI-amplified breach costs are projected to more than double
 **It's methodical, predictable, testable, measurable.**
 </div>
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 When vendors start pitching you "AI-powered solutions," ask them one question: How do you test it? If they can't answer, it's theatre.
@@ -388,6 +377,9 @@ When vendors start pitching you "AI-powered solutions," ask them one question: H
 <!-- .slide: data-background="#000000" -->
 
 ## The Three-Dimensional AI Threat
+
+<div class="two-column">
+<div>
 
 **1. AI Attacks You** (Traditional Security)
 - Weaponized LLMs, autonomous exploits
@@ -404,17 +396,20 @@ When vendors start pitching you "AI-powered solutions," ask them one question: H
 - Alignment failures under adversarial conditions
 - Cost: Reputational destruction, regulatory scrutiny
 
-<div class="fragment">
+</div>
+<div>
 
 **The Gap:**
+
 Traditional security only addresses #1.
+
 CISOs have no framework for #2 and #3.
 
-→ **This is the blind spot.**
+**→ This is the blind spot.**
 
 </div>
+</div>
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 You're now dealing with three simultaneous threat dimensions. Traditional security handles external attacks on your systems. But your data protection strategy doesn't protect humans from the AI itself. You can't DLP your way out of a chatbot telling a 14-year-old to commit suicide. You need a fundamentally different approach - testing for human safety, not just data security.
@@ -481,7 +476,6 @@ Provides **proof of due diligence** defensible in court and with regulators
 
 <p class="citation">Source: github.com/lizTheDeveloper/monitoring_llms_demo</p>
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 Evals are systematic automated tests you run before deployment and continuously in production. They test safety, fairness, alignment, and correctness. The frameworks - DeepEval, RAGAs, DeepChecks - are open source and production ready. You run tests against a dataset, set pass/fail thresholds, and either deploy or fix. Critically, this provides proof of due diligence when you're in front of a regulator or judge.
@@ -552,7 +546,6 @@ Measurable, provable due diligence that holds up in court and with regulators.
 </div>
 </div>
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 This is what good looks like: measurable, provable due diligence. This is what holds up in court. This is what you can demonstrate to regulators. Not a dashboard, not a policy, but actual testing with actual metrics.
@@ -590,7 +583,6 @@ So you might be thinking, "This sounds expensive. How do I justify this to my CF
 <div class="stat-large">18-33 years</div>
 One prevented wrongful death lawsuit = **18-33 years of testing budget**
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 Do the math. One prevented wrongful death lawsuit equals 18 to 33 years of testing budget. If your testing prevents even one of those incidents, the payback is immediate. This isn't a cost center. This is liability insurance with measurable ROI.
@@ -601,7 +593,8 @@ Do the math. One prevented wrongful death lawsuit equals 18 to 33 years of testi
 
 ## Testing Viability = Security + Ethics + Proof
 
-**Viability Means:**
+<div class="two-column">
+<div>
 
 **Security Viability:**
 - Systems withstand real attacks (measured MTTR)
@@ -618,6 +611,9 @@ Do the math. One prevented wrongful death lawsuit equals 18 to 33 years of testi
 - Baseline metrics documented and tested
 - Cryptographically signed audit trails
 
+</div>
+<div>
+
 **The Value:**
 - Know what's real (not what vendors claim)
 - Prevent catastrophic failures before they happen
@@ -625,11 +621,13 @@ Do the math. One prevented wrongful death lawsuit equals 18 to 33 years of testi
 - Compliance you can prove, not just claim
 
 **It's the difference between:**
-Wrongful death lawsuit **vs.** documented due diligence
-€35M fine **vs.** regulatory compliance proof
-Viral embarrassment **vs.** controlled deployment
+- Wrongful death lawsuit **vs.** documented due diligence
+- €35M fine **vs.** regulatory compliance proof
+- Viral embarrassment **vs.** controlled deployment
 
-<p class="tagline">Facts, not fear. Evidence beats assurances.</p>
+</div>
+</div>
+
 
 Note:
 Testing viability means proving your systems work as claimed. Security viability: systems withstand attacks with measured recovery time. Ethical viability: AI refuses harm under adversarial testing. Measurable proof: evidence that holds up in court. This isn't optional - it's the difference between showing documented due diligence versus facing a wrongful death lawsuit.
@@ -683,7 +681,6 @@ So you understand the problem. You understand the solution. Now the question is:
 
 <p class="citation">Source: NIST AI RMF 2.0 (Feb 2024); NIST-AI-600-1 (July 2024)</p>
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 The NIST AI Risk Management Framework gives us a proven structure. Here's what each function means in practice.
@@ -749,7 +746,7 @@ So let me tell you about the nuwest.ai approach.
 
 <!-- .slide: data-background="#FFFFFF" -->
 
-## The nuwest.ai Approach
+## Our Approach
 
 **What We Don't Do:**
 ❌ Security theatre, checkbox compliance, vendor pitches
@@ -767,7 +764,6 @@ So let me tell you about the nuwest.ai approach.
 **Our Differentiator:**
 Most companies sell tools. We measure truth.
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 We don't do security theatre or checkbox compliance. We test whether your AI is actually safe - both from external attacks and from harming humans. Security viability means agent-amplified incident response and measured MTTR. Ethical viability means evals with fairness rubrics and third-party validation. You need both - security without ethics leaves humans at risk, ethics without security leaves you vulnerable.
@@ -821,7 +817,6 @@ We're almost done. Let me leave you with this.
 
 **Validate it during a wrongful death lawsuit**
 
-<p class="tagline">Facts, not fear.</p>
 
 Note:
 Here's your choice. You can test viability now, in a controlled environment, where you can find the problems and fix them. Or you can validate your approach during a wrongful death lawsuit, when it's too late to fix anything.
