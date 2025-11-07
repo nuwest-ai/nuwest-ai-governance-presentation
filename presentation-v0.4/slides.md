@@ -1776,7 +1776,7 @@ Here are your next steps. First, audit your current AI deployments. Second, sche
 
 <!-- .slide: data-background="#000000" class="closing-slide" -->
 
-# nuwest.ai
+# nuwest.ai >
 
 **[your.email@nuwest.ai](mailto:your.email@nuwest.ai)**
 

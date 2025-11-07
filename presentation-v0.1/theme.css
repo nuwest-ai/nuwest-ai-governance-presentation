@@ -1,0 +1,89 @@
+/**
+ * nuwest.ai Custom Theme for Reveal.js
+ * CISO Forum Presentation - November 12, 2025
+ */
+
+:root {
+    --color-primary: #111111;
+    --color-accent: #FFD400;
+    --color-secondary: #0A0A0A;
+    --color-link: #1CAFB9;
+    --color-background: #FFFFFF;
+    --color-text: #111111;
+    --color-text-inverse: #FFFFFF;
+    
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+}
+
+.reveal {
+    font-family: var(--font-body);
+    font-size: 32px;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.reveal h1 { font-size: 3em; }
+.reveal h2 { font-size: 2.2em; }
+.reveal h3 { font-size: 1.6em; }
+
+.reveal a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.stat-large {
+    font-size: 6em;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-align: center;
+}
+
+.title-slide h1 {
+    font-size: 3.5em;
+    color: var(--color-accent);
+}
+
+.section-header h1 {
+    font-size: 4em;
+    color: var(--color-accent);
+}
+
+.closing-slide {
+    text-align: center;
+}
+
+.closing-slide h1 {
+    font-size: 5em;
+    color: var(--color-accent);
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.footer-logo {
+    height: 30px;
+}
+
+/* Note: Full theme.css content available in original artifact */
