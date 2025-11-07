@@ -1,0 +1,554 @@
+/**
+ * nuwest.ai Presentation Theme
+ * Brand Colors: Yellow (#FFD300) + Black (#000000)
+ * Primary Font: Chakra Petch
+ * Design: Minimal, functional, warning-sign aesthetic
+ */
+
+:root {
+    --yellow: #FFD300;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray: #333333;
+    --light-gray: #F5F5F5;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+.reveal {
+    font-family: 'Chakra Petch', monospace, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+/*********************************************
+ * BACKGROUNDS
+ *********************************************/
+
+.reveal .slides section {
+    padding: 40px;
+}
+
+.reveal .slides section[data-background="#000000"],
+.reveal .slides section[data-background="#000000"] h1,
+.reveal .slides section[data-background="#000000"] h2,
+.reveal .slides section[data-background="#000000"] h3,
+.reveal .slides section[data-background="#000000"] p,
+.reveal .slides section[data-background="#000000"] li {
+    color: var(--white);
+}
+
+.reveal .slides section[data-background="#FFFFFF"] {
+    background: var(--white);
+    color: var(--black);
+}
+
+.reveal .slides section[data-background="#FFD300"],
+.reveal .slides section[data-background="#FFD300"] h1,
+.reveal .slides section[data-background="#FFD300"] h2,
+.reveal .slides section[data-background="#FFD300"] h3,
+.reveal .slides section[data-background="#FFD300"] p {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: 'Chakra Petch', monospace, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    text-transform: none;
+}
+
+.reveal h1 {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.reveal h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/*********************************************
+ * TITLE SLIDE
+ *********************************************/
+
+.reveal .title-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reveal .title-slide h1 {
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--yellow);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.reveal .title-slide h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: var(--white);
+}
+
+.reveal .title-slide p {
+    font-size: 0.9em;
+    color: var(--white);
+    margin: 10px 0;
+}
+
+/*********************************************
+ * SECTION HEADERS
+ *********************************************/
+
+.reveal .section-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reveal .section-header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: var(--yellow);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.reveal .section-header h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--white);
+}
+
+/*********************************************
+ * TEXT
+ *********************************************/
+
+.reveal p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.reveal strong,
+.reveal b {
+    font-weight: 700;
+    color: var(--yellow);
+}
+
+.reveal em,
+.reveal i {
+    font-style: italic;
+}
+
+/*********************************************
+ * LISTS
+ *********************************************/
+
+.reveal ul,
+.reveal ol {
+    margin: 20px 0 20px 40px;
+}
+
+.reveal ul {
+    list-style-type: none;
+}
+
+.reveal ul li:before {
+    content: ">";
+    color: var(--yellow);
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.reveal ol {
+    list-style-type: decimal;
+}
+
+.reveal li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/*********************************************
+ * QUOTES & CALLOUTS
+ *********************************************/
+
+.reveal blockquote {
+    background: var(--gray);
+    border-left: 5px solid var(--yellow);
+    margin: 30px 0;
+    padding: 20px 30px;
+    font-style: italic;
+    color: var(--white);
+}
+
+.quote-box {
+    background: var(--black);
+    border: 3px solid var(--yellow);
+    padding: 30px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
+
+.question-box {
+    background: var(--yellow);
+    border: 3px solid var(--black);
+    padding: 40px;
+    margin: 40px 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black);
+}
+
+/*********************************************
+ * STATS & EMPHASIS
+ *********************************************/
+
+.stat-large {
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--yellow);
+    text-align: center;
+    margin: 40px 0;
+    line-height: 1;
+}
+
+.highlight-yellow {
+    background: var(--yellow);
+    padding: 5px 10px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+/*********************************************
+ * CITATIONS & TAGLINES
+ *********************************************/
+
+.citation {
+    font-size: 0.6em;
+    color: var(--gray);
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.reveal .slides section[data-background="#000000"] .citation {
+    color: #999;
+}
+
+.tagline,
+.tagline-closing {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--yellow);
+    margin-top: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tagline-closing {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/*********************************************
+ * FRAGMENTS
+ *********************************************/
+
+.reveal .fragment {
+    opacity: 0;
+}
+
+.reveal .fragment.visible {
+    opacity: 1;
+}
+
+.reveal .fragment.highlight-yellow.visible {
+    background: var(--yellow);
+}
+
+/*********************************************
+ * CODE
+ *********************************************/
+
+.reveal pre {
+    background: var(--black);
+    border: 2px solid var(--yellow);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.7em;
+    line-height: 1.4;
+}
+
+.reveal code {
+    background: var(--gray);
+    color: var(--yellow);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+.reveal pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/*********************************************
+ * TABLES
+ *********************************************/
+
+.reveal table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 100%;
+}
+
+.reveal table th {
+    background: var(--black);
+    color: var(--yellow);
+    font-weight: 700;
+    padding: 15px;
+    border: 2px solid var(--yellow);
+}
+
+.reveal table td {
+    padding: 12px;
+    border: 1px solid var(--gray);
+}
+
+.reveal table tr:nth-child(even) {
+    background: var(--light-gray);
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+
+.reveal img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+/*********************************************
+ * FOOTER
+ *********************************************/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: var(--black);
+    border-top: 3px solid var(--yellow);
+    z-index: 100;
+    font-size: 0.7em;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--white);
+}
+
+.footer-brand {
+    font-weight: 700;
+    color: var(--yellow);
+    font-size: 1.2em;
+}
+
+.footer-divider {
+    margin: 0 15px;
+    color: var(--yellow);
+}
+
+.footer-title {
+    color: var(--white);
+}
+
+/*********************************************
+ * BACKUP SLIDES
+ *********************************************/
+
+.reveal .backup-slide {
+    font-size: 0.7em;
+}
+
+.reveal .backup-slide h2 {
+    font-size: 1.4em;
+}
+
+/*********************************************
+ * CLOSING SLIDE
+ *********************************************/
+
+.reveal .closing-slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reveal .closing-slide h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--yellow);
+    margin-bottom: 40px;
+}
+
+.reveal .closing-slide p {
+    font-size: 1.2em;
+    color: var(--white);
+    margin: 15px 0;
+}
+
+.reveal .closing-slide a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reveal .closing-slide a:hover {
+    text-decoration: underline;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+
+.reveal a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reveal a:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls {
+    color: var(--yellow);
+}
+
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--yellow);
+}
+
+.reveal .progress span {
+    background: var(--yellow);
+}
+
+/*********************************************
+ * BLACKOUT MODE (B KEY)
+ *********************************************/
+
+body.blackout .reveal .slides {
+    opacity: 0;
+}
+
+/*********************************************
+ * CUSTOM UTILITY CLASSES
+ *********************************************/
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+/*********************************************
+ * PRINT/PDF STYLES
+ *********************************************/
+
+@media print {
+    .footer {
+        display: none;
+    }
+
+    .reveal .slides section {
+        page-break-after: always;
+    }
+}
+
+/*********************************************
+ * RESPONSIVE
+ *********************************************/
+
+@media screen and (max-width: 1024px) {
+    .reveal {
+        font-size: 24px;
+    }
+
+    .reveal h1 {
+        font-size: 2em;
+    }
+
+    .stat-large {
+        font-size: 3.5em;
+    }
+}

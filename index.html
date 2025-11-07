@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The AI Governance Blind Spot - Why Your Data Protection Strategy Isn't Ready for Machine Learning">
+    <meta name="author" content="nuwest.ai">
+    <meta name="keywords" content="AI governance, AI security, fairness rubrics, evals, machine learning safety, CISO">
+
+    <title>The AI Governance Blind Spot | nuwest.ai</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Google Fonts: Chakra Petch per brand guidelines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Reveal.js core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+
+    <!-- Syntax highlighting for code -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/monokai.css">
+
+    <!-- Custom theme -->
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slides loaded from slides.md -->
+            <section
+                data-markdown="slides.md"
+                data-separator="^\n---\n$"
+                data-separator-vertical="^\n--\n$"
+                data-separator-notes="^Note:"
+                data-charset="utf-8">
+            </section>
+        </div>
+
+        <!-- Footer with nuwest.ai branding -->
+        <div class="footer">
+            <div class="footer-content">
+                <span class="footer-brand">nuwest.ai &gt;</span>
+                <span class="footer-divider">|</span>
+                <span class="footer-title">The AI Governance Blind Spot</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reveal.js core -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+
+    <!-- Reveal.js plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/search/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/zoom/zoom.js"></script>
+
+    <!-- Initialize Reveal.js -->
+    <script>
+        Reveal.initialize({
+            // Display settings
+            hash: true,
+            center: true,
+            controls: true,
+            controlsTutorial: false,
+            progress: true,
+            slideNumber: 'c/t',
+            showSlideNumber: 'speaker',
+
+            // Transition settings - interesting and unpredictable
+            transition: 'slide', // Main transition
+            transitionSpeed: 'default',
+            backgroundTransition: 'zoom',
+
+            // Auto-slide disabled
+            autoSlide: 0,
+
+            // PDF export settings
+            pdfMaxPagesPerSlide: 1,
+            pdfSeparateFragments: false,
+
+            // View settings
+            width: 1920,
+            height: 1080,
+            margin: 0.04,
+
+            // Plugins
+            plugins: [
+                RevealMarkdown,
+                RevealNotes,
+                RevealHighlight,
+                RevealSearch,
+                RevealZoom
+            ],
+
+            // Markdown settings
+            markdown: {
+                smartypants: true,
+                breaks: true
+            }
+        });
+
+        // Custom keyboard shortcuts
+        Reveal.addKeyBinding({ keyCode: 66, key: 'B' }, () => {
+            // B key for blackout
+            document.body.classList.toggle('blackout');
+        });
+
+        // Random transition variations for unpredictability
+        const transitions = ['slide', 'convex', 'concave', 'zoom'];
+        let transitionIndex = 0;
+
+        Reveal.on('slidechanged', event => {
+            // Vary transitions occasionally for unpredictability
+            if (Math.random() > 0.7) {
+                transitionIndex = (transitionIndex + 1) % transitions.length;
+                Reveal.configure({
+                    transition: transitions[transitionIndex]
+                });
+            }
+        });
+    </script>
+</body>
+</html>
