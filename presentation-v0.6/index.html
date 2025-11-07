@@ -69,9 +69,9 @@
             slideNumber: 'c/t',
             showSlideNumber: 'speaker',
 
-            // Transition settings - diverse and unpredictable
+            // Transition settings - diverse and impactful
             transition: 'none', // Will be set dynamically
-            transitionSpeed: 'default',
+            transitionSpeed: 'fast',
             backgroundTransition: 'fade',
 
             // Auto-slide disabled
@@ -110,15 +110,15 @@
 
         // DIVERSE TRANSITIONS for intrigue and attention
         const transitions = [
-            'none',      // Instant (10% - section breaks)
-            'fade',      // Gentle (25% - most common)
-            'slide',     // Standard (20%)
-            'convex',    // Dynamic (15%)
-            'concave',   // Dynamic (15%)
-            'zoom'       // Impact (15%)
+            'none',      // Instant (5% - minimal use)
+            'fade',      // Gentle (30% - most common for smooth flow)
+            'slide',     // Standard (25% - professional movement)
+            'convex',    // Dynamic (15% - impact moments)
+            'concave',   // Dynamic (15% - depth effect)
+            'zoom'       // Impact (10% - emphasis only)
         ];
 
-        const transitionWeights = [10, 25, 20, 15, 15, 15]; // Total: 100
+        const transitionWeights = [5, 30, 25, 15, 15, 10]; // Total: 100
 
         function getWeightedRandomTransition() {
             const rand = Math.random() * 100;

@@ -1,24 +1,24 @@
 <!-- .slide: data-background="#000000" class="title-slide" -->
 
 <div class="title-container">
-    <p class="logo-title-top">nuwest.ai <span class="logo-chevron">></span></p>
+<p class="logo-title-top">nuwest.ai <span class="logo-chevron">></span></p>
 
-    <h1 class="main-title">THE AI GOVERNANCE<br/>BLIND SPOT</h1>
+<h1 class="main-title">THE AI GOVERNANCE<br/>BLIND SPOT</h1>
 
-    <h2 class="subtitle">Why Your Data Protection Strategy<br/>Isn't Ready for Machine Learning</h2>
+<h2 class="subtitle">Why Your Data Protection Strategy<br/>Isn't Ready for Machine Learning</h2>
 
-    <div class="title-divider"></div>
+<div class="title-divider"></div>
 
-    <div class="title-footer">
-        <div class="event-info">
-            <p class="event-name">CISO Virtual Forum</p>
-            <p class="event-date">November 12, 2025</p>
-        </div>
-        <div class="presenter-info">
-            <p class="presenter-name">Neil Ashworth</p>
-            <p class="presenter-title">Founder & Chief Architect</p>
-        </div>
-    </div>
+<div class="title-footer">
+<div class="event-info">
+<p class="event-name">CISO Virtual Forum</p>
+<p class="event-date">November 12, 2025</p>
+</div>
+<div class="presenter-info">
+<p class="presenter-name">Neil Ashworth</p>
+<p class="presenter-title">Founder & Chief Architect</p>
+</div>
+</div>
 </div>
 
 Note:
@@ -821,15 +821,15 @@ Here are your next steps. First, audit your current AI deployments. Second, sche
 <h2 class="thank-you-text">Thank you for attending</h2>
 
 <div class="closing-content">
-    <div class="qr-code">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.linkedin.com/in/neil-ashworth" alt="LinkedIn QR Code" style="width: 200px; height: 200px; border: 5px solid var(--yellow);">
-        <p class="qr-label">Connect on LinkedIn</p>
-    </div>
-    <div class="contact-details">
-        <p class="contact-link">[nuwest.ai@gmail.com](mailto:nuwest.ai@gmail.com)</p>
-        <p class="contact-link">[https://www.nuwest.ai](https://www.nuwest.ai)</p>
-        <p class="tagline-closing">Measure what matters.</p>
-    </div>
+<div class="qr-code">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.linkedin.com/in/neil-ashworth" alt="LinkedIn QR Code" style="width: 250px; height: 250px; border: 5px solid var(--yellow);">
+<p class="qr-label">Connect on LinkedIn</p>
+</div>
+<div class="contact-details">
+<p class="contact-link">[nuwest.ai@gmail.com](mailto:nuwest.ai@gmail.com)</p>
+<p class="contact-link">[https://www.nuwest.ai](https://www.nuwest.ai)</p>
+<p class="tagline-closing">Measure what matters.</p>
+</div>
 </div>
 
 Note:
