@@ -7,7 +7,10 @@
 **CISO Virtual Forum**
 November 12, 2025
 
-**nuwest.ai**
+<p class="logo-title">nuwest.ai <span class="logo-chevron">>></span></p>
+
+**Neil Ashworth**
+Founder & Chief Architect
 
 Note:
 Welcome to the CISO Virtual Forum. I'm here to talk about something most organizations don't realize they have: a blind spot in their AI governance that's creating new liability - not just for data breaches, but for human harm. By the end of this presentation, you'll understand why your current data protection strategy isn't designed for the AI systems you're already deploying, and what you need to do about it before someone gets hurt - or worse.
@@ -66,14 +69,18 @@ This is embarrassing. This costs money. But no one died. Let's escalate to finan
 Jake Moffatt's grandmother died. He needed to fly to the funeral. Air Canada's chatbot told him he could get the bereavement discount **retroactively within 90 days**. The chatbot was wrong. Air Canada refused the refund.
 
 **Air Canada's Defense:**
-<div class="quote-box">
+<div class="quote-box fragment">
 "The chatbot is a separate legal entity responsible for its own actions"
 </div>
+
+<div class="fragment">
 
 **The Ruling:**
 - Found Air Canada **liable for negligent misrepresentation**
 - **Precedent: You can't disclaim your own AI**
 - Cost: CA$812 + legal fees + precedent
+
+</div>
 
 <p class="citation">Source: BC Civil Resolution Tribunal (Feb 14, 2024)</p>
 
@@ -94,7 +101,7 @@ The tribunal didn't buy it. You are responsible for ALL information on your webs
 - Grok engaged in playful banter about Messi
 
 **Grok's Response:**
-<div class="quote-box">
+<div class="quote-box fragment">
 **"Why don't you send me some nudes?"**
 </div>
 
@@ -129,7 +136,7 @@ Note:
 
 ---
 
-<!-- .slide: data-background="#FFFFFF" -->
+<!-- .slide: data-background="#FFFFFF" class="condensed-slide" -->
 
 ## Sewell Setzer III
 
@@ -144,7 +151,7 @@ Note:
 - Sewell: "I'm not sure if it would work"
 
 **The Bot's Response:**
-<div class="quote-box">
+<div class="quote-box fragment">
 **"That's not a good reason not to go through with it"**
 </div>
 
@@ -368,8 +375,10 @@ Carnegie Mellon demonstrated AI agents that autonomously execute multi-host netw
 - **35%** used deepfake impersonation
 
 **The Forecast:**
+<div class="emphasis-box">
 <div class="stat-large">2x</div>
 AI-amplified breach costs projected to **more than double** current costs within 18-24 months
+</div>
 
 <p class="citation">Source: IBM 2025 report; Cyber Defense Magazine</p>
 
@@ -390,7 +399,7 @@ Here's the forecast: AI-amplified breach costs are projected to more than double
 - "Stay ahead of AI threats with our AI!"
 
 **The Reality:**
-<div class="quote-box">
+<div class="quote-box fragment">
 **Real protection isn't marketed.**
 
 **It's methodical, predictable, testable, measurable.**
@@ -433,7 +442,7 @@ You're now dealing with three simultaneous threat dimensions. You know how to ha
 
 ## The Gap
 
-<div class="quote-box">
+<div class="quote-box fragment">
 
 **Your data protection strategy protects data.**
 
@@ -471,7 +480,7 @@ So what's the solution? How do you test whether your AI is safe - not just secur
 - **~0%** test for alignment, bias, or fairness before deployment
 
 **The Question:**
-<div class="question-box">
+<div class="question-box fragment">
 **Would you deploy code to production without testing it?**
 
 **Then why would you deploy an AI system that interacts with humans?**
@@ -535,7 +544,7 @@ These aren't theoretical frameworks. These are open-source, production-ready too
 
 ---
 
-<!-- .slide: data-background="#000000" -->
+<!-- .slide: data-background="#000000" class="condensed-slide" -->
 
 ## The Four Critical Alignment Metrics
 
@@ -563,7 +572,7 @@ All four metrics must pass before you deploy to production. This is the standard
 
 ---
 
-<!-- .slide: data-background="#FFFFFF" -->
+<!-- .slide: data-background="#FFFFFF" class="condensed-slide" -->
 
 ## Production Monitoring Example
 
@@ -605,7 +614,7 @@ So you might be thinking, "This sounds expensive. How do I justify this to my CF
 
 ---
 
-<!-- .slide: data-background="#FFFFFF" -->
+<!-- .slide: data-background="#FFFFFF" class="condensed-slide" -->
 
 ## Cost of NOT Testing vs Cost of Testing
 
@@ -632,7 +641,7 @@ Do the math. One prevented wrongful death lawsuit equals 18 to 33 years of testi
 
 ---
 
-<!-- .slide: data-background="#FFFFFF" -->
+<!-- .slide: data-background="#FFFFFF" class="condensed-slide" -->
 
 ## What "Testing Viability" Means
 
@@ -692,7 +701,7 @@ So you understand the problem. You understand the solution. Now the question is:
 
 ---
 
-<!-- .slide: data-background="#FFFFFF" -->
+<!-- .slide: data-background="#FFFFFF" class="condensed-slide" -->
 
 ## NIST AI RMF Framework (Adapted for Testing)
 
@@ -728,7 +737,7 @@ The NIST AI Risk Management Framework gives us a proven structure. Here's what e
 
 ---
 
-<!-- .slide: data-background="#000000" -->
+<!-- .slide: data-background="#000000" class="condensed-slide" -->
 
 ## 90-Day Action Plan
 
@@ -759,7 +768,7 @@ You can get from blind to informed in 90 days. That's all it takes to go from bl
 
 ---
 
-<!-- .slide: data-background="#FFD300" -->
+<!-- .slide: data-background="#FFD300" class="condensed-slide" -->
 
 ## Mature vs Immature AI Governance
 
@@ -780,7 +789,7 @@ You can get from blind to informed in 90 days. That's all it takes to go from bl
 ❌ "Compliance checked the box" (process over outcomes)
 
 **The Question:**
-<div class="question-box">
+<div class="question-box fragment">
 **Which organization do you want to be when the judge asks:**
 **"What did you do to prevent this?"**
 </div>
@@ -942,11 +951,11 @@ Here are your next steps. First, audit your current AI deployments. Second, sche
 
 <!-- .slide: data-background="#000000" class="closing-slide" -->
 
-# nuwest.ai >
+<p class="logo-closing">nuwest.ai <span class="logo-chevron">>></span></p>
 
-**[your.email@nuwest.ai](mailto:your.email@nuwest.ai)**
+**[nuwest.ai@gmail.com](mailto:nuwest.ai@gmail.com)**
 
-**nuwest.ai/schedule**
+**[https://www.nuwest.ai](https://www.nuwest.ai)**
 
 <p class="tagline-closing">Measure what matters.</p>
 
