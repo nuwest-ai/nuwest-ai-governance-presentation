@@ -854,6 +854,8 @@ Here are your next steps. First, audit your current AI deployments. Second, sche
 </div>
 </div>
 
+<h3 class="download-assets">Visit nuwest.ai to download assets.</h3>
+
 Note:
 Thank you. I'll stay on for questions. Let's find your blind spots before someone gets hurt.
 

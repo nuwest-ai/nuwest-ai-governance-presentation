@@ -490,9 +490,10 @@
 }
 
 .tagline-closing {
-    font-size: 1.4em;
-    text-align: center;
-    margin-top: 60px;
+    font-size: 1.2em;
+    text-align: left;
+    margin-top: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /*********************************************
@@ -718,7 +719,7 @@
     font-size: 2.5em;
     font-weight: 600;
     color: var(--white);
-    margin: 30px 0 50px 0;
+    margin: 20px 0 40px 0;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -728,9 +729,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 100px;
     width: 100%;
     max-width: 1200px;
+    margin: 30px auto;
 }
 
 /* QR code section */
@@ -780,6 +782,16 @@
 .reveal .closing-slide .contact-chakra a {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 600;
+}
+
+/* Download assets text */
+.reveal .closing-slide .download-assets {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+    margin-top: 40px;
 }
 
 /*********************************************
@@ -966,7 +978,7 @@ body.blackout .reveal .slides {
 .logo-closing {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 2.2em;
     margin: 20px 0;
 }
 
