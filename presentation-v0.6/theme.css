@@ -285,13 +285,14 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 50px 35px !important;
 }
 
 .reveal .section-header h1 {
     font-size: 2.8em;
     font-weight: 700;
     color: var(--yellow);
-    margin-bottom: 20px;
+    margin-bottom: 30px !important;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
@@ -394,7 +395,8 @@
     background: var(--black);
     border: 3px solid var(--yellow);
     padding: 30px;
-    margin: 20px 0;
+    margin: 30px auto !important;
+    max-width: 85% !important;
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
@@ -417,13 +419,14 @@
  *********************************************/
 
 .stat-large {
-    font-size: 4em;
+    font-size: 4em !important;
     font-weight: 700;
     color: var(--yellow);
-    text-align: center;
-    margin: 20px 0;
+    text-align: center !important;
+    margin: 25px auto !important;
     line-height: 1;
     font-family: 'IBM Plex Sans', sans-serif;
+    display: block !important;
 }
 
 .reveal .slides section[data-background="#FFD300"] .stat-large {
@@ -499,6 +502,7 @@
 .reveal .fragment {
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    margin-top: 15px !important;
 }
 
 .reveal .fragment.visible {
@@ -612,11 +616,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 15px 30px;
+    padding: 10px 30px;
     background: var(--black);
     border-top: 3px solid var(--yellow);
     z-index: 100;
-    font-size: 0.7em;
+    font-size: 0.65em;
 }
 
 .footer-content {
@@ -653,7 +657,7 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     color: var(--yellow);
-    font-size: 0.9em;
+    font-size: 0.85em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-left: auto;
@@ -890,13 +894,13 @@ body.blackout .reveal .slides {
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 40px;
     align-items: start;
     margin: 15px 0;
 }
 
 .two-column > div {
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 /* Ensure two-column works on dark backgrounds */
@@ -1010,8 +1014,8 @@ body.blackout .reveal .slides {
 .emphasis-box {
     border: 3px solid var(--yellow);
     padding: 15px 20px;
-    margin: 15px auto;
-    max-width: 85%;
+    margin: 20px auto !important;
+    max-width: 85% !important;
     background: rgba(255, 211, 0, 0.05);
     box-shadow: 0 0 20px rgba(255, 211, 0, 0.2);
     text-align: center;

@@ -42,7 +42,7 @@ Let me start with four real-world examples that show the escalating consequences
 
 ---
 
-<!-- .slide: data-background="#FFFFFF" -->
+<!-- .slide: data-background="#FFFFFF" class="condensed-slide" -->
 
 ## Business & Legal Consequences
 
@@ -295,7 +295,7 @@ This works when your adversary is human and operates at human speed. But what ha
 
 ---
 
-<!-- .slide: data-background="#FFFFFF" -->
+<!-- .slide: data-background="#FFFFFF" class="condensed-slide" -->
 
 ## AI as Attack Vector
 
@@ -381,17 +381,17 @@ When vendors start pitching you "AI-powered solutions," ask them one question: H
 <div class="two-column">
 <div>
 
-**1. AI Attacks You** (Traditional Security)
+**1.** AI Attacks You (Traditional Security)
 - Weaponized LLMs, autonomous exploits
 - Your security controls were built for this
 - Cost: **$10M+** (AI-amplified breach)
 
-**2. Your AI Attacks Others** (Ethical Risk)
+**2.** Your AI Attacks Others (Ethical Risk)
 - Toxic outputs, discriminatory decisions
 - No external attacker required
 - Cost: Wrongful death lawsuits, GDPR fines, settlements
 
-**3. Your AI Attacks Itself** (Misalignment Risk)
+**3.** Your AI Attacks Itself (Misalignment Risk)
 - Jailbreaks, prompt injection, data leakage
 - Alignment failures under adversarial conditions
 - Cost: Reputational destruction, regulatory scrutiny
