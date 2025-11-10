@@ -771,6 +771,17 @@
     font-size: 1em;
 }
 
+.reveal .closing-slide .contact-chakra {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.reveal .closing-slide .contact-chakra a {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
 /*********************************************
  * LINKS
  *********************************************/

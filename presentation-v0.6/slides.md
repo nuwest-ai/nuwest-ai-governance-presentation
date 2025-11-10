@@ -845,12 +845,11 @@ Here are your next steps. First, audit your current AI deployments. Second, sche
 
 <div class="closing-content">
 <div class="qr-code">
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.linkedin.com/in/neil-ashworth" alt="LinkedIn QR Code" style="width: 250px; height: 250px; border: 5px solid var(--yellow);">
-<p class="qr-label">Connect on LinkedIn</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://nuwest.ai" alt="nuwest.ai QR Code" style="width: 250px; height: 250px;">
 </div>
 <div class="contact-details">
-<p class="contact-link"><a href="mailto:nuwest.ai@gmail.com">nuwest.ai@gmail.com</a></p>
-<p class="contact-link"><a href="https://www.nuwest.ai">www.nuwest.ai</a></p>
+<p class="contact-link contact-chakra"><a href="mailto:nuwest.ai@gmail.com">nuwest.ai@gmail.com</a></p>
+<p class="contact-link contact-chakra"><a href="https://www.nuwest.ai">https://www.nuwest.ai</a></p>
 <p class="tagline-closing">Measure what matters.</p>
 </div>
 </div>
